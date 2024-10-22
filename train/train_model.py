@@ -27,14 +27,13 @@ Usage:
     python train_augmented2.py
 """
 
-import io
+
 import os
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers
 from sklearn.metrics import confusion_matrix, precision_recall_curve, f1_score
 import traceback
-import matplotlib.pyplot as plt
 from custom_callbacks.custom_callbacks import LearningRateLogger, ImageLogger, ConfusionMatrixLogger, F1ScoreLogger
 import yaml
 
