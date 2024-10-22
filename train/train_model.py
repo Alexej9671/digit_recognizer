@@ -44,11 +44,11 @@ with open("train_config.yml", "r") as file:
 # Access configurations from the loaded config dictionary
 BATCH_SIZE = config['batch_size']
 EPOCHS = config['epochs']
-LEARNING_RATE = config['learning_rate']
+LEARNING_RATE = float(config['learning_rate'])
 LOG_DIR = config['log_dir']
 REDUCE_LR_FACTOR = config['reduce_lr']['factor']
 REDUCE_LR_PATIENCE = config['reduce_lr']['patience']
-REDUCE_LR_MIN = config['reduce_lr']['min_lr']
+REDUCE_LR_MIN = float(config['reduce_lr']['min_lr'])
 EARLY_STOPPING_PATIENCE = config['early_stopping_patience']
 
 
