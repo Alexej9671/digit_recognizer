@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 """
 train_augmented2.py
 
@@ -41,7 +38,7 @@ import yaml
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # Load configuration from the YAML file
-with open("config.yml", "r") as file:
+with open("train_config.yml", "r") as file:
     config = yaml.safe_load(file)
 
 # Access configurations from the loaded config dictionary
