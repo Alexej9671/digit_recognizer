@@ -122,26 +122,26 @@ The application and training scripts use YAML configuration files named `config.
 ```yaml
 # config.yml
 
-canvas_width: 200
-canvas_height: 200
-histogram_width: 280
-histogram_height: 140
-brush_size: 8
-stroke_threshold: 10
+CANVAS_WIDTH: 200
+CANVAS_HEIGHT: 200
+HISTOGRAM_WIDTH: 280
+HISTOGRAM_HEIGHT: 140
+BRUSH_SIZE: 8
+STROKE_THRESHOLD: 10
 ```
 
 ```yaml
 #train_config.yml
 
-batch_size: 64
-epochs: 10
-learning_rate: 0.001
-log_dir: logs
-reduce_lr:
-  factor: 0.5
-  patience: 3
-  min_lr: 1e-6
-early_stopping_patience: 5
+BATCH_SIZE: 64
+EPOCHS: 10
+LEARNING_RATE: 0.001
+LOG_DIR: logs
+REDUCE_LR:
+  FACTOR: 0.5
+  PATIENCE: 3
+  MIN_LR: 1e-6
+EARLY_STOPPING_PATIENCE: 5
 ```
 
 - **Canvas Settings**: Adjust the size of the drawing canvas and brush. The stroke_threshold determines how many strokes have to be made
