@@ -1,0 +1,10 @@
+# config.yaml
+batch_size: 16
+epochs: 20
+learning_rate: 0.001
+log_dir: "./logs"
+reduce_lr:
+  factor: 0.1
+  patience: 1
+  min_lr: 1e-9
+early_stopping_patience: 3
